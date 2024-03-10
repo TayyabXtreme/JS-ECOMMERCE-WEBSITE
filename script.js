@@ -1,7 +1,7 @@
 const bar = document.getElementById('bar');
 const close = document.getElementById('close');
 const nav = document.getElementById('navbar');
-
+const inc_dec = document.getElementById('incdec');
 if(bar){
     bar.addEventListener('click', () => {
         nav.classList.add('active');
@@ -15,3 +15,8 @@ if(close){
     });
 }
 
+inc_dec.addEventListener('click', () => {
+    if(inc_dec.value<=1){
+        inc_dec.value = 1;
+    }
+});
